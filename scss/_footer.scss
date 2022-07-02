@@ -1,0 +1,14 @@
+.footer {
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		flex-wrap: wrap;
+		padding: 40px 0;
+		@media (max-width:767.98px){
+			gap:10px;
+			padding: 20px 0;
+		}
+	}
+}

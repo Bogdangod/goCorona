@@ -1,0 +1,91 @@
+.features {
+	padding: 80px 0px 80px 0px;
+	@media (max-width:991.98px){
+		padding: 40px 0;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		@media (max-width:767.98px){
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__media {
+		flex: 0 1 50%;
+		@media (min-width:991.98px){
+			padding: 0px 0px 0px 47px;
+		}
+	}
+
+	&__content {
+		flex: 0 1 50%;
+		@media (max-width:767.98px){
+			margin-bottom: 30px;
+		}
+	}
+
+	&__block-text span{
+		color: $pinkColor;
+	}
+}
+.media-features {
+	@media (max-width:767.98px){
+		width: 290px;	
+	}
+	padding: 56px 0px 27px 0px;
+	width: 373px;
+	position: relative;
+	text-align: center;
+		&__item {
+			position: absolute;
+			background-color: $pinkColor;
+			border-radius: 30px;
+			&_1 {
+				top: 0;
+				left: 0;
+				width: 147px;
+				height: 147px;
+			}
+
+			&_2 {
+				left: 33px;
+				bottom: 0;
+				width: 77px;
+				height: 77px;
+			}
+
+			&_3 {
+				right: 33px;
+				bottom: 107px;
+				width: 77px;
+				height: 77px;
+			}
+		}
+
+	&__image {
+		border-radius: 16px;
+		box-shadow: 2px 4px 32px 0px #0000001F;
+		display: inline-block;
+		position: relative;
+		width: 61.5%;
+		& img{
+			position: relative;
+			z-index: 2;
+			max-width: 100%;
+		}
+		
+		&::after{
+			content: "";
+			position: absolute;
+			width: 206px;
+			height: 27px;
+			border-radius: 16px;
+			bottom: -12px;
+			left: 12px;
+			background-color: rgba(240, 240, 240, 0.49);
+		}
+	}
+	
+}
+

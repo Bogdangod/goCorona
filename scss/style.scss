@@ -1,0 +1,45 @@
+@import "_nullstyle.scss";
+
+$pinkColor:#EC5863;
+$blueColor:#4285F4;
+$titleColor:#000000;
+
+body{
+	font-family: Rubik;
+	color: #616161;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+._container{
+	max-width: 1087px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width:1087px){
+		max-width: 970px;
+	}
+	@media (max-width:991.98px){
+		max-width: 750px;
+	}
+	@media (max-width:767.98px){
+		max-width: none;
+	}
+}
+
+
+
+.main{
+	flex: 1 1 auto;
+}
+
+@import "_header.scss";
+@import "_start.scss";
+@import "_features.scss";
+@import "_experts.scss";
+@import "_support.scss";
+@import "_footer.scss";
